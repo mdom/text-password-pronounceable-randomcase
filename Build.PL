@@ -14,6 +14,7 @@ my $builder = Module::Build->new(
     build_requires     => { 'Test::More' => 0, },
     add_to_cleanup     => ['Text::Password-Pronounceable-RandomCase-*'],
     create_makefile_pl => 'traditional',
+    create_readme      => 1,
 );
 
 $builder->create_build_script();
