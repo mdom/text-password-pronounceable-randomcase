@@ -15,6 +15,13 @@ my $builder = Module::Build->new(
     add_to_cleanup     => ['Text::Password-Pronounceable-RandomCase-*'],
     create_makefile_pl => 'traditional',
     create_readme      => 1,
+    meta_merge         => {
+        resources => {
+            repository =>
+              'http://github.com/mdom/text-password-pronounceable-randomcase',
+        },
+    },
+
 );
 
 $builder->create_build_script();
