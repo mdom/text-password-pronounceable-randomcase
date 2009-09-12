@@ -51,7 +51,7 @@ passwords with random case
 =head1 DESCRIPTION
 
 L<Text::Password::Pronounceable> produces pronouncable passwords. But
-it has the one advantage that it only uses lower case characters. This
+it has the one disadvantage that it only uses lower case characters. This
 module tries to solve this shortcoming. The two methods I<new()> and
 I<generate()> take a third parameter, which determines the frequency of
 upper case characters. Any 1/N'th character will be uppercased on average.
