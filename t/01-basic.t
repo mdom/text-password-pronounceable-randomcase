@@ -16,6 +16,6 @@ ok( $password !~ /[a-z]/, 'password has no lower case characters with frequency 
 $password = $pp->generate(40,40,2);
 
 ok(length $password eq 40 ,'password has right size with $min == $max');
-ok( $password =~ /[a-z]/ and $password =~ /[A-Z]/, 'long password has lower and upper case characters (frequency 2)');
+ok( $password =~ /[a-z]/ && $password =~ /[A-Z]/, 'long password has lower and upper case characters (frequency 2)');
 
 ok( $password = $pp->generate(10,10), 'generate password with standard probability');
