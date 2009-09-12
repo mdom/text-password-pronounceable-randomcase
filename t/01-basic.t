@@ -1,6 +1,6 @@
 use strict;
 use warnings;
-use Test::More tests => 7;
+use Test::More tests => 8;
 use Text::Password::Pronounceable::RandomCase;
 
 my $pp = Text::Password::Pronounceable::RandomCase->new(6, 10, 1);
@@ -19,3 +19,6 @@ ok(length $password eq 40 ,'password has right size with $min == $max');
 ok( $password =~ /[a-z]/ && $password =~ /[A-Z]/, 'long password has lower and upper case characters (frequency 2)');
 
 ok( $password = $pp->generate(10,10), 'generate password with standard probability');
+
+ok (Text::Password::Pronounceable::RandomCase->generate(6, 10), 'functional interface');
+
