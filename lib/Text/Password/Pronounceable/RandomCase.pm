@@ -5,7 +5,7 @@ use warnings;
 use parent 'Text::Password::Pronounceable';
 use Readonly;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub generate {
     my ( $self, $min, $max, $prob ) = @_;
