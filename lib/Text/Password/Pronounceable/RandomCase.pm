@@ -63,7 +63,7 @@ I<generate()> take a third parameter, which determines the frequency of
 upper case characters. Any 1/N'th character will be uppercased on average.
 
 If you do not pass any arguments, I<generate()> will produce passwords
-with a length of eight characters and a 1/4 probaility for any
+with a length of eight characters and a 1/4 probability for any
 character to be uppercased.
 
 =head1 DEPENDENCIES
