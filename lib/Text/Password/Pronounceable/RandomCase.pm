@@ -72,7 +72,7 @@ L<Text::Password::Pronounceable>
 
 =head1 VERSION
 
-0.01
+0.03
 
 =head1 AUTHOR
 
